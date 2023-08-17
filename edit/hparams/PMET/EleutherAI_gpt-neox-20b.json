@@ -1,0 +1,26 @@
+{
+    "layers": [
+         6, 7, 8, 9, 10
+    ],
+    "clamp_norm_factor": 0.8,
+    "layer_selection": "all",
+    "fact_token": "subject_last",
+    "v_num_grad_steps": 30,
+    "v_lr": 5e-1,
+    "v_loss_layer": 43,
+    "v_weight_decay": 0.5,
+    "kl_factor": 0.8,
+    "rewrite_module_tmp": "gpt_neox.layers.{}.mlp.dense_4h_to_h",
+    "rewrite_module_tmps": ["gpt_neox.layers.{}.mlp.dense_4h_to_h"],
+    "layer_module_tmp": "gpt_neox.layers.{}",
+    "mlp_module_tmp": "gpt_neox.layers.{}.mlp.dense_4h_to_h",
+    "attn_module_tmp": "gpt_neox.layers.{}.attention.dense",
+    "ln_f_module": "gpt_neox.final_layer_norm",
+    "lm_head_module": "embed_out",
+    "mom2_adjustment": true,
+    "mom2_update_weight": 15000,
+    "mom2_dataset": "wikipedia",
+    "mom2_n_samples": 50000,
+    "mom2_dtype": "float32",
+    "nll_loss_factor": 1
+}

@@ -241,7 +241,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--model_path",
-        default="/17119/hjj/msra/ptms/"
+        default=None
     )
     parser.add_argument(
         "--model_name",

@@ -93,7 +93,6 @@ def layer_stats(
 
     def get_ds():
         raw_ds = load_dataset(
-            "./caches/wikipedia.py",
             dict(wikitext="wikitext-103-raw-v1", wikipedia="20220301.en")[ds_name],
             cache_dir="./caches"
         )
